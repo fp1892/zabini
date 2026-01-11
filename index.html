@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Zabini Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="./assets/hub.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>ZABINI</h1>
+          <div class="subtitle">
+            Central hub for MVP application and internal documentation
+          </div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="pill" href="https://mvp.zabini.org" data-service="mvp">
+          Open MVP
+        </a>
+        <a class="pill" href="https://wiki.zabini.org" data-service="wiki">
+          Open Wiki
+        </a>
+      </nav>
+    </header>
+
+    <!-- OVERVIEW -->
+    <section class="card">
+      <h2>Overview</h2>
+      <p class="kicker">
+        This page is the central entry point for the Zabini system.
+        All tools are hosted on GitHub Pages and protected individually.
+      </p>
+
+      <div class="grid">
+
+        <div class="card card-inner">
+          <h3>MVP Application</h3>
+          <p class="small">
+            Operational tool used by the group to manage participants,
+            record events and calculate the next MVP.
+          </p>
+          <div class="actions">
+            <a class="pill" href="https://mvp.zabini.org" data-service="mvp">
+              Go to mvp.zabini.org
+            </a>
+          </div>
+        </div>
+
+        <div class="card card-inner">
+          <h3>Documentation Wiki</h3>
+          <p class="small">
+            Long-form documentation covering application behavior,
+            rules, calculations and full technical implementation details.
+          </p>
+          <div class="actions">
+            <a class="pill" href="https://wiki.zabini.org" data-service="wiki">
+              Go to wiki.zabini.org
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- QUICK LINKS -->
+    <section class="card">
+      <h2>Quick Links</h2>
+
+      <div class="nav">
+        <a class="pill" href="https://wiki.zabini.org/mvp-app/">
+          MVP Application Documentation
+        </a>
+        <a class="pill" href="https://wiki.zabini.org/mvp-code/">
+          MVP Code Documentation
+        </a>
+      </div>
+
+      <hr class="sep" />
+
+      <p class="small">
+        Access to MVP and Wiki is protected by their respective login mechanisms.
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      Zabini Hub · Static GitHub Pages · HTTPS via GitHub Pages
+    </footer>
+
+  </div>
+
+  <!-- Optional UX helper -->
+  <script src="./assets/hub.js"></script>
+</body>
+</html>
