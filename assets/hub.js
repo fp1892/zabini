@@ -8,7 +8,8 @@ console.log("ZABINI HUB", "v1.0");
 
 const services = [
   { id: "mvp", url: "https://mvp.zabini.org", label: "MVP" },
-  { id: "wiki", url: "https://wiki.zabini.org", label: "Wiki" }
+  { id: "wiki", url: "https://wiki.zabini.org", label: "Wiki" },
+  { id: "event", url: "https://event.zabini.org", label: "Events" }
 ];
 
 async function checkService(service) {
