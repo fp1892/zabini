@@ -1,4 +1,4 @@
-console.log("ZABINI HUB", "v1.0");
+console.log("ZABINI HUB", "v1.1");
 
 /*
   Lightweight hub helper
@@ -7,9 +7,8 @@ console.log("ZABINI HUB", "v1.0");
 */
 
 const services = [
-  { id: "mvp", url: "https://mvp.zabini.org", label: "MVP" },
-  { id: "wiki", url: "https://wiki.zabini.org", label: "Wiki" },
-  { id: "event", url: "https://events.zabini.org", label: "Events" }
+  { id: "kc", url: "https://kc.zabini.org", label: "KC Hub" },
+  { id: "wiki", url: "https://wiki.zabini.org", label: "Wiki" }
 ];
 
 async function checkService(service) {
@@ -17,7 +16,7 @@ async function checkService(service) {
     const controller = new AbortController();
     setTimeout(() => controller.abort(), 2500);
 
-    const res = await fetch(service.url, {
+    await fetch(service.url, {
       method: "HEAD",
       mode: "no-cors",
       signal: controller.signal
